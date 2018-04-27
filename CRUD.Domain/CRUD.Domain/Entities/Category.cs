@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CRUD.Domain.Entities
 {
-    public class Categoria
+    public class Category
     {
-        public int CategoriaId { get; set; }
-        public string Descricao { get; set; }
+        public int CategoryId { get; set; }
+        public string Description { get; set; }
     }
 }

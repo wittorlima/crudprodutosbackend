@@ -1,10 +1,10 @@
 ﻿
 namespace CRUD.Domain.Constants
 {
-    public enum Origem
+    public enum Origin
     {
-        Nacional = 0,
-        Importado = 1,
+        National = 0,
+        Imported = 1,
     }
 
     public enum OrderBy
