@@ -1,0 +1,8 @@
+.vs/
+CRUD.Application/bin/
+CRUD.Application/obj/
+CRUD.Domain/CRUD.Domain/bin/
+CRUD.Domain/CRUD.Domain/obj/
+CRUD.Infra.Data/obj/
+CRUD.Service/obj/
+packages/
