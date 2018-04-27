@@ -67,12 +67,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataRegistry.cs" />
     <Compile Include="Mappings\EntityMapping.cs" />
     <Compile Include="Mappings\ProductMapping.cs" />
     <Compile Include="Migrations\M0001_CreateDatabaseCrud.cs" />
     <Compile Include="Migrations\M0002_CreateTableProduct.cs" />
     <Compile Include="Migrations\M0003_ModifyFieldImageToNull.cs" />
     <Compile Include="NHibernateInitializer.cs" />
+    <Compile Include="NhibernateRegistry.cs" />
+    <Compile Include="NHLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
