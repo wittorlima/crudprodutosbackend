@@ -6,3 +6,5 @@ CRUD.Domain/CRUD.Domain/obj/
 CRUD.Infra.Data/obj/
 CRUD.Service/obj/
 packages/
+CRUD.Infra.Data/bin/
+CRUD.Service/bin/

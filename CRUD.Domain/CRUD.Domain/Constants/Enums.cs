@@ -6,4 +6,10 @@ namespace CRUD.Domain.Constants
         Nacional = 0,
         Importado = 1,
     }
+
+    public enum OrderBy
+    {
+        Asc = 1,
+        Desc = 2
+    }
 }
