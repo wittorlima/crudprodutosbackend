@@ -66,14 +66,15 @@
   <ItemGroup>
     <Compile Include="Mappings\EntityMapping.cs" />
     <Compile Include="Mappings\ProductMapping.cs" />
+    <Compile Include="Migrations\M0001_CreateDatabaseCrud.cs" />
+    <Compile Include="Migrations\M0002_CreateTableProduct.cs" />
+    <Compile Include="Migrations\M0003_ModifyFieldImageToNull.cs" />
     <Compile Include="NHibernateInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
