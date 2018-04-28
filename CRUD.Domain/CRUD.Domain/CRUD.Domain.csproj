@@ -34,6 +34,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\ModelBase.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Exceptions\InvalidParameterException.cs" />
     <Compile Include="Interfaces\Repositories\IProductRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Services\IProductService.cs" />

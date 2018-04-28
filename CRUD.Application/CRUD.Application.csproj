@@ -44,19 +44,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.0.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Nancy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nancy.2.0.0-clinteastwood\lib\net452\Nancy.dll</HintPath>
+    <Reference Include="Nancy, Version=1.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.1.4.4\lib\net40\Nancy.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.Bootstrappers.StructureMap, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nancy.Bootstrappers.StructureMap.2.0.0-clinteastwood\lib\net452\Nancy.Bootstrappers.StructureMap.dll</HintPath>
+    <Reference Include="Nancy.Bootstrappers.StructureMap, Version=1.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.Bootstrappers.StructureMap.1.4.2\lib\net45\Nancy.Bootstrappers.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Aspnet, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap, Version=4.6.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\StructureMap.4.6.1\lib\net45\StructureMap.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -88,13 +98,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configurations\ApplicationBootstrapper.cs" />
+    <Compile Include="Configurations\AutoMapperBootstrapper.cs" />
+    <Compile Include="Configurations\AutoMapper\ProductMappingProfile.cs" />
     <Compile Include="Configurations\StructureMapContainer.cs" />
+    <Compile Include="DTOs\BaseDTO.cs" />
+    <Compile Include="DTOs\ProductDTO.cs" />
+    <Compile Include="Modules\ModuleBase.cs" />
+    <Compile Include="Modules\ProductModule.cs" />
+    <Compile Include="Pagination\IPagedList.cs" />
+    <Compile Include="Pagination\PagedList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Configurations\AutoMapper\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\CRUD.Domain\CRUD.Domain\CRUD.Domain.csproj">
+      <Project>{6553D224-2289-4624-BEC6-F710357C6306}</Project>
+      <Name>CRUD.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CRUD.Infra.Data\CRUD.Infra.Data.csproj">
       <Project>{C0ACBB06-156E-4EFB-915C-74347FFC5CD5}</Project>
       <Name>CRUD.Infra.Data</Name>
