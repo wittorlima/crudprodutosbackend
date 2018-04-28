@@ -13,8 +13,6 @@ namespace CRUD.Infra.Data.Mappings
     {
         public EntityMapping()
         {
-            Schema("emax");
-
             Id(x => x.Id, mapper =>
             {
                 mapper.Generator(Generators.Increment);
