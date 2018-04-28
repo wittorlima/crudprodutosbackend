@@ -7,7 +7,7 @@ namespace CRUD.Application.Configurations
     {
         protected override void ConfigureApplicationContainer(IContainer existingContainer)
         {
-            //AutoMapperBootstrapper.Initialize();
+            AutoMapperBootstrapper.Initialize();
             StructureMapContainer.Configure(existingContainer);
         }
     }
